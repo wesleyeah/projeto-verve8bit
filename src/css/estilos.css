@@ -1,0 +1,171 @@
+body {
+    font-family: 'Press Start 2P', sans-serif;
+    background-image: url("../imagens/background.jpg.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    backdrop-filter: blur(8px);
+}
+
+
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+h2 {
+    font-family: 'Press Start 2P', sans-serif;
+    color: #000;
+}
+
+.topo-imagem {
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin: 10px auto 40px auto;
+}
+
+.the-verve {
+    display: flex;
+    gap: 30px;
+    padding: 10px 0;
+}
+
+.cartao-the-verve {
+    display: none;
+    max-width: 360px;
+    border-radius: 10px;
+    box-shadow: rgba(5, 5, 201, 0.2) 0px 7px 29px 0px;
+}
+
+.cartao-the-verve.aberto {
+    display: block;
+}
+
+.cartao-the-verve img {
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+}
+
+.cartao-the-verve .cartao-topo {
+    padding: 30px 40px 0;
+}
+
+.cartao-the-verve .nome {
+    margin-bottom: 5px;
+}
+
+.cartao-the-verve .tipo {
+    background-color: #bf9ff3d8;
+    font-family: 'Press Start 2P', sans-serif;
+    font-size: 14px;
+    opacity: 0.8;
+    border-radius: 10px;
+    padding: 2px 10px;
+}
+
+.cartao-the-verve .detalhes {
+    color: #b90f8f;
+    font-family: 'Press Start 2P', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cartao-the-verve .cartao-informacoes {
+    background-color: #835cddbe;
+    display: flex;
+    justify-content: space-between;
+    padding: 90px 20px 50px;
+    margin-top: -70px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.cartao-the-verve .cartao-informacoes h3 {
+    font-size: 30px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #0f0f0f;
+    text-align: center;
+}
+
+.cartao-the-verve .cartao-informacoes .descricao {
+    padding: 0 10px;
+    font-size: 12px;
+    max-height: 150px;
+    overflow-y: scroll;
+}
+
+.cartao-the-verve .cartao-informacoes .descricao::-webkit-scrollbar {
+    width: 8px;
+}
+
+.cartao-the-verve .cartao-informacoes .descricao::-webkit-scrollbar-thumb {
+    background-color: #000000;
+    border-radius: 15px;
+}
+
+.cartao-the-verve .cartao-informacoes .descricao::-webkit-scrollbar-track {
+    background-color: #4758b677;
+    border-radius: 10px;
+}
+
+.listagem {
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.listagem .verve img {
+    width: 30%;
+}
+
+.listagem .verve {
+    background-color: #6b727a41;
+    color: #000000;
+    display: flex;
+    align-items: center;
+    padding: 0 5px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    border-radius: 30px;
+    min-height: 60px;
+    transition: transform 0.15s ease-in-out;
+}
+
+.listagem .verve:hover {
+    transform: scale(1.05);
+}
+
+.listagem .verve span {
+    padding-right: 20px;
+}
+
+.listagem .verve.ativo {
+    background-color: #4a0c5ac5;
+}
+
+.posicao-1 {
+    order: 1;
+}
+
+.posicao-2 {
+    order: 2;
+}
+
+.posicao-3 {
+    order: 3;
+}

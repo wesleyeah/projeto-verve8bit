@@ -1,0 +1,48 @@
+@media(max-width: 750px) {
+    .the-verve {
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 0;
+    }
+
+    .cartao-the-verve {
+        max-width: 300px;
+        margin-bottom: 20px; /* Adicionando espaço entre os cartões */
+    }
+
+    .cartao-the-verve .cartao-informacoes {
+        padding: 40px 20px 20px; /* Ajustando o padding */
+        margin-top: -40px; /* Ajustando o margin-top */
+    }
+
+    .cartao-the-verve .cartao-informacoes h3 {
+        font-size: 18px; /* Ajustando o tamanho da fonte */
+    }
+
+    .listagem {
+        order: 2; /* Garante que a listagem fique na parte inferior */
+        max-width: 100%; /* Deixando a listagem ocupar toda a largura da tela */
+        padding: 10px; /* Adicionando padding */
+    }
+
+    .cartoes-the-verve {
+        order: 1; /* Garante que os cartões fiquem acima da listagem */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px; /* Espaçamento entre os cartões */
+    }
+
+    .listagem ul {
+        display: flex;
+        flex-direction: column; /* Empilhando os itens da listagem verticalmente */
+        align-items: center;
+        width: 100%; /* Ocupando toda a largura */
+    }
+
+    .listagem .verve {
+        width: 80%; /* Ajustando a largura dos itens da listagem */
+        margin-bottom: 20px; /* Adicionando espaço entre os itens */
+        border-radius: 20px; /* Ajustando o border-radius */
+    }
+}
